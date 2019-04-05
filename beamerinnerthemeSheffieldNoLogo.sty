@@ -1,0 +1,33 @@
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+
+\mode<presentation>
+
+\setbeamertemplate{background}{
+}
+
+% Footnotes
+
+\renewcommand{\footnoterule}{
+\kern -3pt
+\moveright 1cm\vbox{\hrule width 5cm}\nointerlineskip
+\kern 2.6pt
+}
+\setbeamertemplate{footnote}
+{
+  \hspace{1.0cm}
+  \parindent 0em\noindent%
+  \raggedright
+  \hbox to 0.5em{\hfil\insertfootnotemark}\insertfootnotetext\par%
+}
+
+
+
+\mode<all>
